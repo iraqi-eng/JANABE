@@ -17,12 +17,12 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
 
       - name: Extract JANABE project
         run: |
           mkdir build-src
-          unzip -q JANABE-build-ready.zip -d build-src
+          unzip -q JANABE-build-fixed.zip -d build-src
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
